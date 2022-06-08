@@ -58,4 +58,3 @@ Courses:
 ## English level
 
 Level: **A1**
-
