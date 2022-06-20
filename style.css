@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Hairline'), local('Montserrat-Hairline'), url('./fonts/montserrathairline.woff2') format('woff2'), url('./fonts/montserrathairline.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Light'), local('Montserrat-Light'), url('./fonts/montserratlight.woff2') format('woff2'), url('./fonts/montserratlight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), local('Montserrat-Regular'), url('./fonts/montserrat.woff2') format('woff2'), url('./fonts/montserrat.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Bold'), local('Montserrat-Bold'), url('./fonts/montserratbold.woff2') format('woff2'), url('./fonts/montserratbold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Black'), local('Montserrat-Black'), url('./fonts/montserratblack.woff2') format('woff2'), url('./fonts/montserratblack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+:root {
+    --blue: #242D3E;
+    --light-blue: #EEEEF0;
+    --gold: #B09D75;
+    --grey: #F8F8F8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+html {
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(3) rotate(90)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240, 6%, 94%, 1)'/><path d='M15 5h10v30H15zM35-5V5H5V-5zM35 35v10H5V35zM35-15h10v30H35zM55 15v10H25V15zM15 15v10h-30V15zM35 25h10v30H35zM-5 25H5v30H-5zM-5-15H5v30H-5z'  stroke-width='8' stroke='hsla(39, 27%, 56%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-6,0)' fill='url(%23a)'/></svg>")
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--blue);
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 360px;
+    background-color: var(--blue);
+}
+
+.header__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: var(--gold);
+}
+
+.header__fullname {
+    font-size: 64px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 15px;
+}
+
+.header__job {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    margin: 25px 0;
+    font-size: 20px;
+    letter-spacing: 5px;
+
+}
+
+.header__job hr {
+    width: 30%;
+    background-color: var(--gold);
+}
+
+.header__contacts {
+    width: 100%;
+}
+
+.contacts__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contacts__item {
+    width: 30%;
+    min-height: 80px;
+}
+
+.contacts__source {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__icon {
+    width: 36px;
+    height: 36px;
+}
+
+.contacts__description {
+    margin: 20px 0;
+    color: white;
+    font-weight: 300;
+}
+
+.contacts__line {
+    width: 1px;
+    height: 100%;
+    background-color: white;
+}
+
+/* Main */
+
+.main {
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+}
+
+.main__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    background-color: var(--light-blue);
+}
+
+.info__photography {
+    margin: 25px 0 0 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 1px solid var(--blue);
+}
+
+.info__block,
+.content__block,
+.main__block {
+    width: 100%;
+    padding: 25px;
+}
+
+.block__title {
+    padding: 10px 0;
+    margin: 25px 0;
+    border-top: 3px solid var(--blue);
+    border-bottom: 3px solid var(--blue);
+    text-transform: uppercase;
+}
+
+.block__description {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.block__mark::before {
+    content: url('./assets/images/mark16.png');
+    background-size: 12px 12px;
+}
+
+.main__content {
+    background-color: var(--grey);
+    width: 65%;
+    min-height: 640px;
+}
+
+.block__skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block__skill {
+    width: 40%;
+}
+
+.block__skill-meter {
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+
+.block__skill-meter::-webkit-meter-bar {
+    border-radius: 0;
+}
+
+.block__skill-meter::-webkit-meter-bar {
+    background-color: #D9D9D9;
+}
+
+.block__skill_gold::-webkit-meter-optimum-value {
+    background: var(--gold);
+}
