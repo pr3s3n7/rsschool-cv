@@ -34,7 +34,7 @@ Here is one of the simple examples of my code:
 ```
 const hw = ["Hello", "World"]
 
-console.log(`${hw[0]} ${$hw[1]}!`);
+console.log(`${hw[0]} ${$hw[1]}!`)
 ```
 This code sorts the array by adding all numeric values to the end
 
